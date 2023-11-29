@@ -2,11 +2,9 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
+// ================================ Mi CSS
+
+.bodyPortada {
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -14,15 +12,14 @@ body {
   color: $uoc-corporate;
 }
 
-// ================================ Mi CSS
-
 nav {
   margin-left: 3rem;
   margin-top: 3rem;
 }
 
 .nav-link.active {
-  font-size: x-large;
+  font-size: large;
+  color: red;
 }
 
 .nav-link {
@@ -42,12 +39,121 @@ nav {
   border: transparent;
 }
 
+.boxPrincipalPortada {
+  text-align: center;
+  margin: 2rem;
+
+  .h1Portada {
+    font-size: xx-large;
+  }
+
+  .pPortada {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: justify;
+  }
+}
+
+.uoc-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+// ================================ CSS GRID para la portada
+
+
+@supports(display: grid) {
+
+  .bodyPortada {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 15vh 115vh 40vh 15vh;
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $uoc-bg;
+    color: $uoc-corporate;
+  }
+  
+  nav {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    justify-content: center;
+  }
+  
+  .img-thumbnail.logoTenisTop {
+    grid-column: 1;
+    grid-row: 1;
+    width: 7%;
+    background-color: transparent;
+    border: transparent;
+    padding-bottom: 1rem;
+  }
+  
+  .img-thumbnail.logoTenisBot {
+    grid-column: 2;
+    grid-row: 4;
+    width: 5%;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .img-fluid.wallpaper {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+  
+  .boxPrincipalPortada {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    margin: 2rem;
+    width:fit-content;
+    
+  
+    .h1Portada {
+      font-size: xx-large;
+    }
+  
+    .pPortada {
+      margin-top: 2rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      text-align: justify;
+    }
+  }
+  
+  nav.uoc-footer {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+}
+
+// ============================== RESTO DE PAGINAS
+
+.bodyPaginas {
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $uoc-bg;
+  color: $uoc-corporate;
+}
+
 .boxPrincipal {
   text-align: center;
   margin: 2rem;
 
   h1 {
-    font-size: xx-large;
+    font-size: x-large;
+    margin-top: 2rem;
   }
 
   p {
@@ -58,10 +164,92 @@ nav {
   }
 }
 
-// ================================ Mi CSS
-
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  justify-content: center;
+.img-fluid.raqueta {
+  border-radius: 4%;
 }
+
+.img-fluid.entrevista {
+  border-radius: 4%;
+  width: 43%;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+// ============================== FLEX DE PARTICIPANTES
+
+
+.boxJugadores {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.jugador {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgJugador {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.h2Jugador {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.pJugador {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+// ============================== NUEVAS UNIDADES Y COLORES (PAGINA MULTIMEDIA)
+
+.boxMultimedia {
+  text-align: center;
+  margin: 2rem;
+
+  h1 {
+    font-size: x-large;
+    margin-top: 2rem;
+    color: rgb(60, 179, 113); // Aplicación de nueva función de color a los títulos. 
+  }
+
+  p {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: justify;
+    font-size: 1.1cqi;  // Aplicación de nueva unidad en base al contenedor. 
+  }
+}
+

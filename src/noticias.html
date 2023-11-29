@@ -7,20 +7,63 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Noticias</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="bodyPaginas">
+
+    <nav class="nav">
+      <img src="./assets/images/logotenis.png" class="img-thumbnail logoTenisTop" alt="logotenis">
+      <a class="nav-link" href="./index.html">Home</a>
+      <a class="nav-link" href="./participantes.html">Participantes</a>
+      <a class="nav-link active" aria-current="page" href="./noticias.html">Noticias</a>
+      <a class="nav-link" href="./multimedia.html">Multimedia</a>
+    </nav>
+
+    <div class="boxPrincipal">
+
+      <h1>Babolat Pure Drive: la nueva arma</h1>
+
+      <img src="./assets/images/raqueta.jpg" class="img-fluid raqueta" alt="Raqueta Pure Drive">
+
+      <p>La nueva raqueta de tenis Pure Drive ha llegado para transformar el juego en el circuito profesional. Diseñada para ofrecer 
+        una combinación perfecta de potencia y control, esta innovadora raqueta está conquistando a jugadores de élite. Con su marco 
+        aerodinámico y tecnología avanzada, Pure Drive promete cambiar la dinámica del tenis, brindando a los jugadores una experiencia única. 
+        Disponible ahora en tiendas, se espera que esta revolucionaria raqueta se convierta en la elección preferida de los profesionales y aficionados 
+        apasionados. La expectación crece mientras se acerca el Torneo PureSkill de la próxima semana, y todo indica que la revolucionaria raqueta  
+        será la estrella indiscutible. Con su rendimiento excepcional, se espera que la mayoría, si no todos, los jugadores profesionales elijan la Drive 
+        como su arma secreta para enfrentarse en este emocionante torneo.</p>
+
+        <h1>Carlos Alcaraz: "Yo también puedo fallar"</h1>
+
+      <img src="./assets/images/entrevista.webp" class="img-fluid entrevista" alt="Carlos Alcaraz en entrevista. Sonriente.">
+
+      <p>Creo que es importante recordar que todos, incluso yo, tenemos días malos en el tenis", expresó Alcaraz con una sonrisa. "La gente puede ver los 
+        partidos emocionantes y las victorias, pero detrás de eso hay innumerables horas de entrenamiento y sacrificio. Y, por supuesto, hay días en los que 
+        las cosas simplemente no salen como esperas". Alcaraz, quien ha impresionado al mundo del tenis con su habilidad y madurez a una edad temprana, reconoce 
+        que la perfección en el deporte es ilusoria. "La clave está en aprender de esos días, en comprender que forman parte del proceso. Es un recordatorio de que 
+        todos somos humanos, y el tenis es un desafío constante". El tenista español también destacó la importancia de mantener una mentalidad positiva incluso en los 
+        momentos difíciles. "En esos días, trato de centrarme en lo que puedo aprender, en cómo puedo mejorar. El tenis es un juego mental tanto como físico, y gestionar 
+        las derrotas es parte de eso". Con estas palabras, Carlos Alcaraz no solo demuestra su talento en la cancha, sino también su madurez y humildad al aceptar que, como 
+        cualquier jugador, también enfrenta desafíos en su camino hacia la excelencia en el tenis profesional.</p>
+
+        <h1>Los 5 tenistas con mayor porcentaje de victorias en 2023:</h1>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1. Novak Djokovic - <b>56 wins - 7 loses</b></li>
+          <li class="list-group-item">2. Carlos Alcaraz - <b>65 wins - 12 loses</b></li>
+          <li class="list-group-item">3. Janik Sinner - <b>64 wins - 15 loses</b></li>
+          <li class="list-group-item">4. Daniil Medvedev - <b>66 wins - 18 loses</b></li>
+          <li class="list-group-item">5. Taylor Fritz - <b>54 wins - 23 loses</b></li>
+        </ul>
+
+        <h1>Cristiano Ronaldo: "Alcaraz me recuerda a mi"</h1>
+
+        <blockquote>
+          <p>Viendo a Carlos Alcaraz, no puedo evitar recordar mis propios días de juventud. Hay algo especial en la forma en que juega, 
+            en su determinación y ambición". "Me veo a mí mismo cuando era joven, con ese hambre de éxito y la pasión por el juego</p>
+          <footer>- Cristiano Ronaldo, <cite>Marca.com - 23/11/23</cite></footer>
+        </blockquote>
+        
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
