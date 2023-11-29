@@ -5,22 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Portada</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+    <nav class="nav">
+      <img src="./assets/images/logotenis.png" class="img-thumbnail logoTenisTop" alt="logotenis">
+      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+      <a class="nav-link" href="#">Participantes</a>
+      <a class="nav-link" href="#">Noticias</a>
+      <a class="nav-link" href="#">Multimedia</a>
+    </nav>
+
+    <div>
+      <img src="./assets/images/wallpaper.jpg" class="img-fluid wallpaper" alt="imagenPrincipalPagina">
     </div>
+
+    <div class="boxPrincipal"> 
+      <h1>"En la pista y en la vida, cada golpe cuenta. Con determinación y pasión, alcanza tus metas con un ace de perseverancia."</h1>
+      <p>Bienvenidos al torneo de tenis PureSkill, donde la destreza se encuentra con la intensidad. Este evento promete emociones vibrantes, rivalidades 
+        apasionantes y momentos históricos en cada juego. Prepárense para disfrutar de la maestría en la pista mientras los mejores tenistas 
+        del mundo compiten por la gloria. ¡Que empiece el torneo y que cada golpe nos lleve más cerca de la grandeza tenística!</p>
+
+      <i class="fa-solid fa-fire-flame-curved fa-beat-fade"></i>
+    </div>
+
+    
+    
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

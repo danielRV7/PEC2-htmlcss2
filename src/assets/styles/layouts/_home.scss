@@ -7,7 +7,6 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -15,43 +14,54 @@ body {
   color: $uoc-corporate;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+// ================================ Mi CSS
+
+nav {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.nav-link.active {
+  font-size: x-large;
+}
+
+.nav-link {
+  color: brown;
+}
+
+.img-thumbnail.logoTenisTop {
+  width: 7%;
+  background-color: transparent;
+  border: transparent;
+  padding-bottom: 1rem;
+}
+
+.img-thumbnail.logoTenisBot {
+  width: 4%;
+  background-color: transparent;
+  border: transparent;
+}
+
+.boxPrincipal {
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
+  margin: 2rem;
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+  h1 {
+    font-size: xx-large;
+  }
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+  p {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: justify;
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
-}
+// ================================ Mi CSS
 
 .uoc-footer {
   margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+  font-size: 0.9rem;
+  justify-content: center;
 }
