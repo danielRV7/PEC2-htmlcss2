@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Participantes</title>
   </head>
-  <body class="bodyPaginas">
+  <body class="bodypaginas">
 
     <nav class="nav">
-      <img src="./assets/images/logotenis.png" class="img-thumbnail logoTenisTop" alt="logotenis">
+      <img src="./assets/images/logotenis.png" class="img-thumbnail logotenistop" alt="logotenis">
       <a class="nav-link" href="./index.html">Home</a>
       <a class="nav-link active" aria-current="page" href="./participantes.html">Participantes</a>
       <a class="nav-link" href="./noticias.html">Noticias</a>
@@ -18,60 +18,75 @@
     </nav>
 
 
-    <div class="boxJugadores">
+    <div class="boxjugadores">
 
       <h1>Cuadro de jugadores de la edición PureSkill 2023/2024</h1>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/djokovic.png" alt="Jugador 1">
-        <h2 class="h2Jugador">Novak Djokovic</h2>
-        <p class="pJugador">País: Serbia</p>
+        <img class="imgjugador" src="./assets/images/djokovic.png" alt="Jugador 1">
+        <h2 class="headerjugador">Novak Djokovic</h2>
+        <p class="pjugador">País: Serbia</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/alcaraz.png" alt="Jugador 2">
-        <h2 class="h2Jugador">Carlos Alcaraz</h2>
-        <p class="pJugador">País: España</p>
+        <img class="imgjugador" src="./assets/images/alcaraz.png" alt="Jugador 2">
+        <h2 class="headerjugador">Carlos Alcaraz</h2>
+        <p class="pjugador">País: España</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/sinner.png" alt="Jugador 3">
-        <h2 class="h2Jugador">Janik Sinner</h2>
-        <p class="pJugador">País: Italia</p>
+        <img class="imgjugador" src="./assets/images/sinner.png" alt="Jugador 3">
+        <h2 class="headerjugador">Janik Sinner</h2>
+        <p class="pjugador">País: Italia</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/medvedev.png" alt="Jugador 4">
-        <h2 class="h2Jugador">Daniil Medvedev</h2>
-        <p class="pJugador">País: Rusia</p>
+        <img class="imgjugador" src="./assets/images/medvedev.png" alt="Jugador 4">
+        <h2 class="headerjugador">Daniil Medvedev</h2>
+        <p class="pjugador">País: Rusia</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/fritz.png" alt="Jugador 5">
-        <h2 class="h2Jugador">Taylor Fritz</h2>
-        <p class="pJugador">País: United States</p>
+        <img class="imgjugador" src="./assets/images/fritz.png" alt="Jugador 5">
+        <h2 class="headerjugador">Taylor Fritz</h2>
+        <p class="pjugador">País: United States</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/berretini.png" alt="Jugador 6">
-        <h2 class="h2Jugador">Mateo Berretini</h2>
-        <p class="pJugador">País: Italia</p>
+        <img class="imgjugador" src="./assets/images/berretini.png" alt="Jugador 6">
+        <h2 class="headerjugador">Mateo Berretini</h2>
+        <p class="pjugador">País: Italia</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/nadal.png" alt="Jugador 7">
-        <h2 class="h2Jugador">Rafael Nadal</h2>
-        <p class="pJugador">País: España</p>
+        <img class="imgjugador" src="./assets/images/nadal.png" alt="Jugador 7">
+        <h2 class="headerjugador">Rafael Nadal</h2>
+        <p class="pjugador">País: España</p>
       </div>
 
       <div class="jugador">
-        <img class="imgJugador" src="./assets/images/ruud.png" alt="Jugador 8">
-        <h2 class="h2Jugador">Casper Ruud</h2>
-        <p class="pJugador">País: Noruega</p>
+        <img class="imgjugador" src="./assets/images/ruud.png" alt="Jugador 8">
+        <h2 class="headerjugador">Casper Ruud</h2>
+        <p class="pjugador">País: Noruega</p>
       </div>
 
     </div>
 
+    <div class="boxdesplegable">
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          Secreto Djokovic
+        </button>
+      </p>
+      <div class="boxaparece" style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" id="textoflotante" style="width: 300px;">
+            Novak Djokovic ha declarado que su torneo favorito anualmente es el PureSkill. Y no es para menos, el jugador serbio ha ganado
+            en 9 de las 10 ediciones que se lleva disputando este evento. 
+          </div>
+        </div>
+      </div>
+    </div>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
